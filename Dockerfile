@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 RUN apt-get update && apt-get install -y nodejs npm
 
 # Build frontend
-RUN cd /app/frontend && npm install --network-timeout=100000 && npm run build
+RUN cd /app/frontend && rm -f package-lock.json && npm install --network-timeout=100000 && npm run build
 
 # Expose port 5000 for the Flask app
 EXPOSE 5000
