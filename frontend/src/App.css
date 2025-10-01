@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.panel {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.recent-activity-bar {
+  width: 20%;
+}
+
+.main-application-bar {
+  width: 60%;
+}
+
+.user-account-bar {
+  width: 20%;
+}
